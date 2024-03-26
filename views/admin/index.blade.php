@@ -1,5 +1,5 @@
 <div class="x_page-header">
-	<h1>XSentry</h1>
+	<h1>xSentry</h1>
 </div>
 
 <section class="section">
