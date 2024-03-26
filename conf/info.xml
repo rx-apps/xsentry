@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module version="0.2">
+	<title xml:lang="ko">xSentry</title>
+	<description xml:lang="ko">Sentry 에러 트래킹 서비스를 연결합니다.</description>
+
+	<author email_address="rxapps@qroffle.com" link="https://github.com/rx-apps">
+		<name xml:lang="ko">rxApps</name>
+	</author>
+</module>

@@ -1,0 +1,14 @@
+{
+  "name": "rx-apps/xsentry",
+  "type": "rhymix-module",
+  "license": "GPL-2.0-or-later",
+  "author": [
+    {
+      "name": "rxApps",
+      "email": "rxapps@qroffle.com"
+    }
+  ],
+  "require": {
+    "sentry/sdk": "^4.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<namespaces>
+		<namespace name="RxApps\XSentry" />
+	</namespaces>
+	<actions>
+		<action name="dispXsentryAdminDashboard" class="Src\Controllers\AdminController" admin-index="true" />
+		<action name="procXsentryAdminUpdateDsn" class="Src\Controllers\AdminController" />
+		<action name="procXsentryAdminMakeTestException" class="Src\Controllers\AdminController" />
+	</actions>
+	<eventHandlers>
+		<eventHandler before="moduleHandler.init" class="Src\EventHandlers\RegisterSentryEventHandler" method="handle" />
+	</eventHandlers>
+</module>
