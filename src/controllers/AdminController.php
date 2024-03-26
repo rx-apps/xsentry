@@ -18,7 +18,7 @@ class AdminController extends BaseModule
 	 */
 	public function dispXsentryAdminDashboard(): void
 	{
-		$dsn = $this->getConfiguredSentryDsn();
+		$dsn = $this->getSentryDsnConfigurations();
 		Context::set('xsentry_dsn', $dsn);
 
 		$this->setTemplatePath($this->module_path . 'views/admin');
@@ -61,7 +61,7 @@ class AdminController extends BaseModule
 			throw new Exception('프론트엔드 DSN은 https:// 로 시작해야 하며, .js 로 끝나야 합니다.');
 		}
 
-		if (!$this->setConfiguredSentryDsn($backendEnabled, $backendDsn, $frontendEnabled, $frontendDsn)) {
+		if (!$this->setSentryDsnConfigurations($backendEnabled, $backendDsn, $frontendEnabled, $frontendDsn)) {
 			throw new Exception('일시적인 오류로 설정을 저장하지 못했습니다.');
 		}
 
